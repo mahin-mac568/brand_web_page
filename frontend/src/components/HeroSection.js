@@ -33,7 +33,7 @@ const HeroSection = () => {
 
         {/* Credentials */}
         <p className="font-sf text-base md:text-lg text-amber-medium mb-12 font-medium">
-          Data Engineer • Fortune-25 • Ivy League • Servant of The Most Compassionate
+          Data Engineer • Fortune-25 • Ivy League • Servant of The Most Merciful
         </p>
 
         {/* CTA Button */}
