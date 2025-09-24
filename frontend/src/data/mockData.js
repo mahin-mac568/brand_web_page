@@ -6,8 +6,7 @@ export const socialPlatforms = [
     handle: 'thenobleengineer',
     url: '#instagram-mock',
     motto: 'Living in The Now.',
-    highlightWords: ['Now'],
-    metrics: '1.2K followers'
+    highlightWords: ['Now']
   },
   {
     id: 2,
@@ -16,8 +15,7 @@ export const socialPlatforms = [
     handle: 'thenobleengineer',
     url: '#tiktok-mock',
     motto: 'Is technology capable of creating utopia?',
-    highlightWords: ['technology', 'utopia'],
-    metrics: '856 followers'
+    highlightWords: ['technology', 'utopia']
   },
   {
     id: 3,
@@ -26,8 +24,7 @@ export const socialPlatforms = [
     handle: 'thenobleengnr',
     url: '#twitter-mock',
     motto: 'Fighting against the weapons of end times.',
-    highlightWords: ['Fighting', 'weapons'],
-    metrics: '2.3K followers'
+    highlightWords: ['Fighting', 'weapons']
   },
   {
     id: 4,
@@ -36,8 +33,7 @@ export const socialPlatforms = [
     handle: 'thenobleengineer',
     url: '#threads-mock',
     motto: 'Building a smarter brain for nobler actions.',
-    highlightWords: ['smarter', 'nobler'],
-    metrics: '678 followers'
+    highlightWords: ['smarter', 'nobler']
   },
   {
     id: 5,
@@ -46,8 +42,7 @@ export const socialPlatforms = [
     handle: 'thenobleengineer',
     url: '#substack-mock',
     motto: 'Filtering infinity and eternity...',
-    highlightWords: ['infinity', 'eternity'],
-    metrics: '245 subscribers'
+    highlightWords: ['infinity', 'eternity']
   },
   {
     id: 6,
@@ -56,7 +51,6 @@ export const socialPlatforms = [
     handle: 'thenobleengineer',
     url: '#youtube-mock',
     motto: 'Playing the core game loop of life.',
-    highlightWords: ['core', 'game', 'loop'],
-    metrics: '1.8K subscribers'
+    highlightWords: ['core', 'game', 'loop']
   }
 ];
