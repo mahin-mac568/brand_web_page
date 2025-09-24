@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, PlayCircle, Twitter, MessageCircle, FileText, Youtube, ExternalLink } from 'lucide-react';
+import { Instagram, Video, Twitter, MessageSquare, Mail, Youtube, ExternalLink } from 'lucide-react';
 import { socialPlatforms } from '../data/mockData';
 
 const ContentSection = () => {
