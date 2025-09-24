@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', 'Roboto',
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7,35 +7,35 @@
 }
 
 /* Font families */
-.font-orbitron {
-  font-family: 'Orbitron', monospace;
+.font-press-start {
+  font-family: 'Press Start 2P', monospace;
 }
 
-.font-inter {
-  font-family: 'Inter', sans-serif;
+.font-sf {
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', sans-serif;
 }
 
-/* Noble color palette - Wraith theme */
+/* Amber Walnut Morning color palette */
 :root {
-  --noble-primary: #1E1702;      /* Dark brown-black */
-  --noble-light: #E5E3E4;        /* Light cream */
-  --noble-secondary: #342005;     /* Medium brown */
-  --noble-muted: #8C886B;        /* Muted olive */
-  --noble-accent: #047C58;       /* Deep teal green */
+  --amber-light: #EBEFEE;        /* Light cream */
+  --amber-warm: #CCB499;         /* Light amber */
+  --amber-dark: #4A413C;         /* Dark brown */
+  --amber-medium: #C8906D;       /* Medium amber */
+  --amber-accent: #BB6C43;       /* Darker amber */
 }
 
 /* Custom color classes */
-.text-noble-primary { color: var(--noble-primary); }
-.text-noble-light { color: var(--noble-light); }
-.text-noble-secondary { color: var(--noble-secondary); }
-.text-noble-muted { color: var(--noble-muted); }
-.text-noble-accent { color: var(--noble-accent); }
+.text-amber-light { color: var(--amber-light); }
+.text-amber-warm { color: var(--amber-warm); }
+.text-amber-dark { color: var(--amber-dark); }
+.text-amber-medium { color: var(--amber-medium); }
+.text-amber-accent { color: var(--amber-accent); }
 
-.bg-noble-primary { background-color: var(--noble-primary); }
-.bg-noble-light { background-color: var(--noble-light); }
-.bg-noble-secondary { background-color: var(--noble-secondary); }
-.bg-noble-muted { background-color: var(--noble-muted); }
-.bg-noble-accent { background-color: var(--noble-accent); }
+.bg-amber-light { background-color: var(--amber-light); }
+.bg-amber-warm { background-color: var(--amber-warm); }
+.bg-amber-dark { background-color: var(--amber-dark); }
+.bg-amber-medium { background-color: var(--amber-medium); }
+.bg-amber-accent { background-color: var(--amber-accent); }
 
 /* Smooth scrolling behavior */
 html {
@@ -63,22 +63,22 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--noble-light);
+  background: var(--amber-light);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--noble-accent);
+  background: var(--amber-accent);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--noble-secondary);
+  background: var(--amber-dark);
 }
 
 /* Focus styles for accessibility */
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid var(--noble-accent);
+  outline: 2px solid var(--amber-accent);
   outline-offset: 2px;
 }
 
@@ -140,10 +140,10 @@ button:active {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(4, 124, 88, 0.3);
+    box-shadow: 0 0 5px rgba(187, 108, 67, 0.3);
   }
   50% {
-    box-shadow: 0 0 20px rgba(4, 124, 88, 0.6);
+    box-shadow: 0 0 20px rgba(187, 108, 67, 0.6);
   }
 }
 
@@ -186,10 +186,10 @@ section {
 /* Fallback for browsers without backdrop-filter */
 @supports not (backdrop-filter: blur(12px)) {
   .backdrop-blur-md {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(235, 239, 238, 0.8);
   }
   
   .backdrop-blur-sm {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(235, 239, 238, 0.6);
   }
 }

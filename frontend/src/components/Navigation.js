@@ -30,9 +30,9 @@ const Navigation = ({ activeSection, isIdle, onNavigate }) => {
           aria-label={isExpanded ? 'Collapse navigation' : 'Expand navigation'}
         >
           {isExpanded ? (
-            <X className="w-5 h-5 text-noble-light" />
+            <X className="w-5 h-5 text-amber-light" />
           ) : (
-            <Menu className="w-5 h-5 text-noble-light" />
+            <Menu className="w-5 h-5 text-amber-light" />
           )}
         </button>
 
@@ -47,19 +47,19 @@ const Navigation = ({ activeSection, isIdle, onNavigate }) => {
                   onClick={() => onNavigate(item.id)}
                   className={`relative flex items-center w-full text-left transition-all duration-300 ${
                     isActive 
-                      ? 'text-noble-accent font-semibold opacity-100' 
-                      : 'text-noble-light opacity-70 hover:opacity-90'
+                      ? 'text-amber-accent font-semibold opacity-100' 
+                      : 'text-amber-light opacity-70 hover:opacity-90'
                   }`}
                   aria-current={isActive ? 'true' : 'false'}
                 >
                   {/* Active indicator */}
                   {isActive && (
-                    <div className="absolute -left-3 w-1 h-6 bg-noble-accent rounded-full animate-pulse" />
+                    <div className="absolute -left-3 w-1 h-6 bg-amber-accent rounded-full animate-pulse" />
                   )}
                   
                   {/* Label */}
                   {isExpanded && (
-                    <span className="ml-2 text-sm font-inter tracking-wide">
+                    <span className="ml-2 text-sm font-sf tracking-wide">
                       {item.label}
                     </span>
                   )}

@@ -16,16 +16,16 @@ const ContentSection = () => {
     <section 
       id="content"
       data-section="content"
-      className="min-h-screen bg-noble-primary text-noble-light py-20 px-6"
+      className="min-h-screen bg-amber-accent text-amber-light py-20 px-6"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section title */}
-        <h2 className="font-orbitron text-5xl md:text-7xl font-bold text-center mb-16 text-noble-accent tracking-wide">
+        <h2 className="font-press-start text-4xl md:text-6xl font-bold text-center mb-16 text-amber-light tracking-wide">
           Content
         </h2>
 
-        {/* Zigzag social platforms */}
-        <div className="space-y-12">
+        {/* Tight-packed social platforms */}
+        <div className="space-y-16">
           {socialPlatforms.map((platform, index) => {
             const IconComponent = platformIcons[platform.platform];
             const isEven = index % 2 === 0;
@@ -33,51 +33,52 @@ const ContentSection = () => {
             return (
               <div
                 key={platform.id}
-                className={`flex items-center gap-8 ${
-                  isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                } flex-col group`}
+                className={`grid md:grid-cols-2 gap-8 items-stretch ${
+                  isEven ? '' : 'md:grid-flow-col-dense'
+                }`}
               >
-                {/* Icon side */}
-                <div className={`flex-shrink-0 ${isEven ? 'md:ml-0' : 'md:mr-0'}`}>
+                {/* Icon side - takes full width with margins */}
+                <div className={`${isEven ? 'order-1' : 'order-2 md:col-start-2'} flex justify-center items-center px-8`}>
                   <a
                     href={platform.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block p-6 bg-noble-secondary hover:bg-noble-accent rounded-2xl transition-all duration-300 hover:scale-110 hover:shadow-2xl group-hover:animate-pulse"
+                    className="block p-12 bg-amber-dark hover:bg-amber-medium rounded-3xl transition-all duration-300 hover:scale-110 hover:shadow-2xl group-hover:animate-pulse w-full aspect-square flex items-center justify-center"
                     aria-label={`Visit ${platform.name} on ${platform.platform}`}
                   >
-                    <IconComponent className="w-12 h-12 text-noble-light" />
+                    <IconComponent className="w-20 h-20 text-amber-light" />
                   </a>
                 </div>
 
-                {/* Content side */}
-                <div className={`flex-1 ${isEven ? 'md:text-left' : 'md:text-right'} text-center`}>
+                {/* Content side - takes full width, no crossing center */}
+                <div className={`${isEven ? 'order-2' : 'order-1 md:col-start-1'} flex flex-col justify-center px-8 ${
+                  isEven ? 'text-left' : 'text-right'
+                }`}>
                   <div className="space-y-4">
-                    <h3 className="font-inter text-2xl md:text-3xl font-bold text-noble-light">
+                    {/* Motto with Apple SF font, slender, italic, big */}
+                    <h3 className="font-sf text-3xl md:text-4xl font-light italic text-amber-light leading-tight">
                       {platform.motto.split(' ').map((word, i) => (
-                        <span key={i} className={platform.highlightWords?.includes(word) ? 'text-noble-accent' : ''}>
+                        <span key={i} className={platform.highlightWords?.includes(word) ? 'text-amber-warm font-medium' : ''}>
                           {word}{' '}
                         </span>
                       ))}
                     </h3>
                     
-                    <div className="flex items-center gap-3 justify-center md:justify-start">
-                      <span className="font-inter text-noble-muted text-sm uppercase tracking-wider">
+                    <div className={`flex items-center gap-3 ${isEven ? 'justify-start' : 'justify-end'}`}>
+                      <span className="font-sf text-amber-warm text-sm uppercase tracking-wider">
                         {platform.name}
                       </span>
-                      <span className="text-noble-muted">•</span>
-                      <span className="font-inter text-noble-muted text-sm">
+                      <span className="text-amber-warm">•</span>
+                      <a
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-sf text-amber-light text-sm hover:text-amber-warm transition-colors cursor-pointer"
+                      >
                         @{platform.handle}
-                      </span>
-                      <ExternalLink className="w-4 h-4 text-noble-muted opacity-70" />
+                      </a>
+                      <ExternalLink className="w-4 h-4 text-amber-warm opacity-70" />
                     </div>
-
-                    {/* Optional engagement metrics */}
-                    {platform.metrics && (
-                      <div className="text-noble-muted text-sm font-inter">
-                        {platform.metrics}
-                      </div>
-                    )}
                   </div>
                 </div>
               </div>

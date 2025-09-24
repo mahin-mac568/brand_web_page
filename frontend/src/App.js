@@ -11,9 +11,9 @@ function App() {
   const [isIdle, setIsIdle] = useState(false);
 
   useEffect(() => {
-    // Load Orbitron font
+    // Load Press Start 2P and San Francisco fonts
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap';
+    link.href = 'https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
 
