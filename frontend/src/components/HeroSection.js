@@ -14,9 +14,9 @@ const HeroSection = () => {
     >
       {/* Background geometric shapes */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-noble-accent rounded-full blur-xl animate-pulse" />
+        <div className="absolute top-20 left-20 w-32 h-32 bg-noble-accent rounded-full blur-xl animate-pulse animate-float" />
         <div className="absolute bottom-32 right-32 w-24 h-24 bg-noble-secondary rounded-lg rotate-45 blur-lg animate-bounce" />
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-noble-primary rounded-full opacity-50" />
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-noble-primary rounded-full opacity-50 animate-float" />
       </div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
