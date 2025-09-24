@@ -59,11 +59,11 @@ const TruthSection = () => {
                 </div>
                 
                 <div className="relative z-10 text-center space-y-6">
-                  <div className="w-32 h-32 mx-auto bg-gradient-to-br from-amber-warm/40 to-amber-light/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <Globe className="w-16 h-16 text-amber-warm animate-pulse" />
+                  <div className="w-32 h-32 mx-auto bg-gradient-to-br from-amber-dark/40 to-amber-light/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <Globe className="w-16 h-16 text-amber-dark animate-pulse" />
                   </div>
                   
-                  <div className="bg-amber-dark/40 backdrop-blur-sm rounded-2xl p-4 border border-amber-warm/40">
+                  <div className="bg-amber-dark/40 backdrop-blur-sm rounded-2xl p-4 border border-amber-dark/40">
                     <div className="text-amber-light font-sf text-sm text-center">
                       "Servant of The Most Compassionate"
                     </div>
