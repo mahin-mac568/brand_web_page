@@ -53,8 +53,8 @@ const TruthSection = () => {
               {/* Spiritual/wisdom visual elements */}
               <div className="relative w-full h-full flex items-center justify-center">
                 <div className="absolute inset-0 opacity-40">
-                  <div className="absolute top-8 right-8 w-20 h-20 border border-amber-warm rounded-full animate-pulse" />
-                  <div className="absolute bottom-12 left-12 w-16 h-16 bg-amber-warm/30 rounded-full animate-bounce" />
+                  <div className="absolute top-8 right-8 w-20 h-20 border border-amber-dark rounded-full animate-pulse" />
+                  <div className="absolute bottom-12 left-12 w-16 h-16 bg-amber-dark/30 rounded-full animate-bounce" />
                   <div className="absolute top-1/3 left-1/4 w-12 h-12 bg-amber-light/20 rounded-lg rotate-45 animate-spin" />
                 </div>
                 
