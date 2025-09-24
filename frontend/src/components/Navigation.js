@@ -8,7 +8,7 @@ const Navigation = ({ activeSection, isIdle, onNavigate }) => {
     { id: 'home', label: 'Home' },
     { id: 'content', label: 'Content' },
     { id: 'engineering', label: 'Engineering' },
-    { id: 'truth', label: Truth' }
+    { id: 'truth', label: 'Truth' }
   ];
 
   return (
