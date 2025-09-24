@@ -5,10 +5,10 @@ import { socialPlatforms } from '../data/mockData';
 const ContentSection = () => {
   const platformIcons = {
     instagram: Instagram,
-    tiktok: PlayCircle,
+    tiktok: Video,
     twitter: Twitter,
-    threads: MessageCircle,
-    substack: FileText,
+    threads: MessageSquare,
+    substack: Mail,
     youtube: Youtube
   };
 
