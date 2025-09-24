@@ -23,12 +23,15 @@ function App() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
             setActiveSection(entry.target.dataset.section);
           }
         });
       },
-      { threshold: 0.5 }
+      { 
+        threshold: [0.3, 0.5, 0.7],
+        rootMargin: '-10% 0px -10% 0px'
+      }
     );
 
     sections.forEach((section) => observer.observe(section));
