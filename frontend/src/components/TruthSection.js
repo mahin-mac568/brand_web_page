@@ -28,20 +28,20 @@ const TruthSection = () => {
 
             {/* Mission pillars */}
             <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="bg-amber-dark/30 backdrop-blur-sm rounded-2xl p-4 border border-amber-warm/30">
-                <Heart className="w-6 h-6 text-amber-warm mb-2" />
+              <div className="bg-amber-dark/30 backdrop-blur-sm rounded-2xl p-4 border border-amber-dark/30">
+                <Heart className="w-6 h-6 text-amber-dark mb-2" />
                 <div className="font-sf text-sm text-amber-light">Share Wisdom</div>
               </div>
-              <div className="bg-amber-dark/30 backdrop-blur-sm rounded-2xl p-4 border border-amber-warm/30">
-                <Users className="w-6 h-6 text-amber-warm mb-2" />
+              <div className="bg-amber-dark/30 backdrop-blur-sm rounded-2xl p-4 border border-amber-dark/30">
+                <Users className="w-6 h-6 text-amber-dark mb-2" />
                 <div className="font-sf text-sm text-amber-light">Fight Fitnah</div>
               </div>
-              <div className="bg-amber-dark/30 backdrop-blur-sm rounded-2xl p-4 border border-amber-warm/30">
-                <Globe className="w-6 h-6 text-amber-warm mb-2" />
+              <div className="bg-amber-dark/30 backdrop-blur-sm rounded-2xl p-4 border border-amber-dark/30">
+                <Globe className="w-6 h-6 text-amber-dark mb-2" />
                 <div className="font-sf text-sm text-amber-light">Unite World</div>
               </div>
-              <div className="bg-amber-dark/30 backdrop-blur-sm rounded-2xl p-4 border border-amber-warm/30">
-                <Star className="w-6 h-6 text-amber-warm mb-2" />
+              <div className="bg-amber-dark/30 backdrop-blur-sm rounded-2xl p-4 border border-amber-dark/30">
+                <Star className="w-6 h-6 text-amber-dark mb-2" />
                 <div className="font-sf text-sm text-amber-light">Noble Actions</div>
               </div>
             </div>
