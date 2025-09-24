@@ -22,7 +22,7 @@ const TruthSection = () => {
             
             <div className="prose prose-lg max-w-none">
               <p className="font-sf text-lg md:text-xl leading-relaxed text-amber-light">
-                The purpose of life is to follow the commands given to us in every instance in time. As <span className="font-semibold text-amber-warm">@thenobleengineer</span>, I use my gifts to share wisdom, fight fitnah, and re-engineer mindsets towards a united world.
+                The purpose of life is to follow the commands given to us in every instance in time. As <span className="font-semibold text-amber-dark">@thenobleengineer</span>, I use my gifts to share wisdom, fight fitnah, and re-engineer mindsets towards a united world.
               </p>
             </div>
 
