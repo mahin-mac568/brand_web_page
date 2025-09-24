@@ -1,52 +1,77 @@
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import Navigation from "./components/Navigation";
+import HeroSection from "./components/HeroSection";
+import ContentSection from "./components/ContentSection";
+import EngineeringSection from "./components/EngineeringSection";
+import TruthSection from "./components/TruthSection";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+function App() {
+  const [activeSection, setActiveSection] = useState("home");
+  const [isIdle, setIsIdle] = useState(false);
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
+  useEffect(() => {
+    // Load Orbitron font
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+
+    // Intersection Observer for navigation
+    const sections = document.querySelectorAll('section[data-section]');
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            setActiveSection(entry.target.dataset.section);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    // Idle state management
+    let idleTimer;
+    const resetIdleTimer = () => {
+      setIsIdle(false);
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => setIsIdle(true), 1000);
+    };
+
+    window.addEventListener('scroll', resetIdleTimer);
+    resetIdleTimer();
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', resetIdleTimer);
+      clearTimeout(idleTimer);
+    };
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
-
-function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Navigation 
+        activeSection={activeSection}
+        isIdle={isIdle}
+        onNavigate={scrollToSection}
+      />
+      
+      <main>
+        <HeroSection />
+        <ContentSection />
+        <EngineeringSection />
+        <TruthSection />
+      </main>
     </div>
   );
 }
