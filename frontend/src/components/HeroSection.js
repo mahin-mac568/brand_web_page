@@ -21,7 +21,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         {/* Main headline */}
-        <h1 className="font-press-start text-4xl md:text-6xl font-bold mb-8 leading-tight">
+        <h1 className="font-press-start text-4xl md:text-6xl font-bold mb-8 leading-tight" style={{ wordSpacing: '-0.2em' }}>
           <span className="text-amber-light">hey, i'm </span>
           <span className="text-amber-accent">Noble</span>
         </h1>
