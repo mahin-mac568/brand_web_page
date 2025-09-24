@@ -39,7 +39,7 @@ const HeroSection = () => {
         {/* CTA Button */}
         <button
           onClick={scrollToContent}
-          className="group inline-flex items-center gap-3 bg-noble-accent hover:bg-noble-accent/90 text-white px-8 py-4 rounded-full font-inter font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          className="group inline-flex items-center gap-3 bg-noble-accent hover:bg-noble-accent/90 text-white px-8 py-4 rounded-full font-inter font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl animate-glow"
         >
           Explore
           <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
