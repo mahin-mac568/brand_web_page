@@ -28,21 +28,21 @@ export const socialPlatforms = [
   },
   {
     id: 4,
+    platform: 'threads',
+    name: 'Threads',
+    handle: 'thenobleengineer',
+    url: 'https://www.threads.com/@thenobleengineer?igshid=NTc4MTIwNjQ2YQ==',
+    motto: 'Building a smarter brain for nobler actions.',
+    highlightWords: ['smarter', 'nobler']
+  },
+  {
+    id: 5,
     platform: 'substack',
     name: 'Substack',
     handle: 'thenobleengineer',
     url: 'https://substack.com/@thenobleengineer?r=18qfrs',
     motto: 'Filtering infinity and eternity...',
     highlightWords: ['infinity', 'eternity']
-  },
-  {
-    id: 5,
-    platform: 'threads',
-    name: 'Threads',
-    handle: 'thenobleengineer',
-    url: '#threads-mock',
-    motto: 'Building a smarter brain for nobler actions.',
-    highlightWords: ['smarter', 'nobler']
   },
   {
     id: 6,
