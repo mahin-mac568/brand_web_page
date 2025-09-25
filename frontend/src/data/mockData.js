@@ -13,7 +13,7 @@ export const socialPlatforms = [
     platform: 'tiktok',
     name: 'TikTok',
     handle: 'thenobleengineer',
-    url: '#tiktok-mock',
+    url: 'https://www.tiktok.com/@thenobleengineer?_t=ZT-9027rJArQ9V&_r=1',
     motto: 'Is technology capable of creating utopia?',
     highlightWords: ['technology', 'utopia']
   },
@@ -22,27 +22,27 @@ export const socialPlatforms = [
     platform: 'twitter',
     name: 'X (Twitter)',
     handle: 'thenobleengnr',
-    url: '#twitter-mock',
+    url: 'https://x.com/thenobleengnr?s=21',
     motto: 'Fighting against the weapons of end times.',
     highlightWords: ['Fighting', 'weapons']
   },
   {
     id: 4,
+    platform: 'substack',
+    name: 'Substack',
+    handle: 'thenobleengineer',
+    url: 'https://substack.com/@thenobleengineer?r=18qfrs',
+    motto: 'Filtering infinity and eternity...',
+    highlightWords: ['infinity', 'eternity']
+  },
+  {
+    id: 5,
     platform: 'threads',
     name: 'Threads',
     handle: 'thenobleengineer',
     url: '#threads-mock',
     motto: 'Building a smarter brain for nobler actions.',
     highlightWords: ['smarter', 'nobler']
-  },
-  {
-    id: 5,
-    platform: 'substack',
-    name: 'Substack',
-    handle: 'thenobleengineer',
-    url: '#substack-mock',
-    motto: 'Filtering infinity and eternity...',
-    highlightWords: ['infinity', 'eternity']
   },
   {
     id: 6,
