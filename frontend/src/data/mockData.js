@@ -4,7 +4,7 @@ export const socialPlatforms = [
     platform: 'instagram',
     name: 'Instagram',
     handle: 'thenobleengineer',
-    url: '#instagram-mock',
+    url: 'https://www.instagram.com/thenobleengineer?igsh=OW93ZG5pNGZuM3g%3D&utm_source=qr',
     motto: 'Living in The Now.',
     highlightWords: ['Now']
   },
