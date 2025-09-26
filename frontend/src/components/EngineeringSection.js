@@ -29,7 +29,7 @@ const EngineeringSection = () => {
                   </div>
                   <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                     <Database className="w-8 h-8 text-amber-dark mb-2" />
-                    <div className="text-sm text-amber-dark font-sf">Engineering</div>
+                    <div className="text-sm text-amber-dark font-sf">SQL</div>
                   </div>
                   <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                     <Brain className="w-8 h-8 text-amber-accent mb-2" />
@@ -37,7 +37,7 @@ const EngineeringSection = () => {
                   </div>
                   <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                     <Cpu className="w-8 h-8 text-amber-dark mb-2" />
-                    <div className="text-sm text-amber-dark font-sf">Innovation</div>
+                    <div className="text-sm text-amber-dark font-sf">PySpark</div>
                   </div>
                 </div>
               </div>
