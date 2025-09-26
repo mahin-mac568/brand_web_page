@@ -65,19 +65,26 @@ const ContentSection = () => {
                     </h3>
                     
                     <div className={`flex items-center gap-3 ${isEven ? 'justify-start' : 'justify-end'}`}>
-                      <span className="font-sf text-amber-dark text-sm uppercase tracking-wider">
+                      <a
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-sf text-amber-dark text-sm uppercase tracking-wider hover:underline"
+                        aria-label={`Visit ${platform.name} on ${platform.platform}`}
+                      >
                         {platform.name}
-                      </span>
+                      </a>
                       <span className="text-amber-warm">•</span>
                       <a
                         href={platform.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-sf text-amber-light text-sm hover:text-amber-warm transition-colors cursor-pointer"
+                        className="font-sf text-amber-light text-sm hover:text-amber-warm transition-colors cursor-pointer inline-flex items-center gap-2"
+                        aria-label={`Visit ${platform.name} on ${platform.platform}`}
                       >
                         @{platform.handle}
+                        <ExternalLink className="w-4 h-4 text-amber-warm opacity-70" />
                       </a>
-                      <ExternalLink className="w-4 h-4 text-amber-warm opacity-70" />
                     </div>
                   </div>
                 </div>
