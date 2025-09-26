@@ -65,7 +65,7 @@ const ContentSection = () => {
                     </h3>
                     
                     <div className={`flex items-center gap-3 ${isEven ? 'justify-start' : 'justify-end'}`}>
-                      <span className="font-sf text-amber-warm text-sm uppercase tracking-wider">
+                      <span className="font-sf text-amber-dark text-sm uppercase tracking-wider">
                         {platform.name}
                       </span>
                       <span className="text-amber-warm">•</span>
