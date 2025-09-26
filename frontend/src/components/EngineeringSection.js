@@ -52,7 +52,7 @@ const EngineeringSection = () => {
             
             <div className="prose prose-lg max-w-none">
               <p className="font-sf text-lg md:text-xl leading-relaxed text-amber-dark">
-                Well whaddaya know! I'm an actual engineer. Not just re-engineering our brains in this distracted age. I write software to build and test data pipelines in our increasingly data-centric world.
+                Well, whaddaya know! I'm an actual engineer—not just re-engineering our brains in this distracted age. I write software to build and test data pipelines in our increasingly data-centric world.
               </p>
               
               <p className="font-sf text-lg md:text-xl leading-relaxed text-amber-dark mt-6">
