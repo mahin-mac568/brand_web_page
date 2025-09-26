@@ -28,7 +28,7 @@ const HeroSection = () => {
 
         {/* Mission tagline */}
         <p className="font-sf text-lg md:text-xl text-amber-warm mb-8 max-w-3xl mx-auto leading-relaxed">
-          I go by <span className="font-semibold text-amber-light">@thenobleengineer</span>—and I'm showcasing the modern world as a knowledge worker navigating the age of AI, tackling digital noise, societal chaos, and the trials of evil. Follow my quest in reshaping the world with Truth.
+          I go by <span className="font-semibold text-amber-light">@thenobleengineer</span>—I'm showcasing the modern world as a knowledge worker navigating the age of AI, while tackling digital noise, societal chaos, and the trials of evil. Follow my quest in reshaping the world with Truth.
         </p>
 
         {/* Credentials */}

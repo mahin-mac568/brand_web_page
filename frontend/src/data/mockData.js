@@ -49,7 +49,7 @@ export const socialPlatforms = [
     platform: 'youtube',
     name: 'YouTube',
     handle: 'thenobleengineer',
-    url: '#youtube-mock',
+    url: 'https://youtube.com/@thenobleengineer?si=kQ84VYpE3GpHQZWo',
     motto: 'Playing the core game loop of life.',
     highlightWords: ['core', 'game', 'loop']
   }
